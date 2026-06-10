@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Campo Sustentável - Agricultura Familiar</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- CABEÇALHO DO SITE -->
+    <header id="topo">
+        <div class="container">
+            <h1>🌱 Campo Sustentável</h1>
+            <p class="subtitulo">Agricultura familiar: produção que alimenta e preserva</p>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Agricultura Familiar</a></li>
+                <li><a href="#problemas">Desafios</a></li>
+                <li><a href="#dicas">Gerador de Dicas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO INÍCIO / APRESENTAÇÃO -->
+        <section id="inicio" class="secao">
+            <div class="container">
+                <h2>Agro forte, futuro sustentável</h2>
+                <p>Equilíbrio entre produção e meio ambiente é possível com a <strong>agricultura familiar</strong>. Conheça práticas que respeitam a terra, a água e as próximas gerações.</p>
+                <img src="https://via.placeholder.com/800x400?text=Agricultura+Familiar" alt="Família trabalhando no campo de forma sustentável" class="imagem-destaque">
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE A AGRICULTURA FAMILIAR -->
+        <section id="sobre" class="secao">
+            <div class="container">
+                <h2>🌾 O que é agricultura familiar?</h2>
+                <article>
+                    <p>A agricultura familiar é aquela praticada em pequenas propriedades rurais, onde a gestão e o trabalho vêm da própria família. No Brasil, esse modelo é responsável por grande parte dos alimentos que chegam à nossa mesa, como feijão, mandioca, leite, frutas e verduras.</p>
+                    <p>Além de garantir comida fresca e saudável, a agricultura familiar fixa o homem no campo, movimenta a economia local e adota práticas que respeitam o meio ambiente.</p>
+                </article>
+                <h3>Principais características:</h3>
+                <ul>
+                    <li>Uso sustentável do solo e da água</li>
+                    <li>Diversidade de culturas (policultivo)</li>
+                    <li>Menor uso de agrotóxicos</li>
+                    <li>Valorização do conhecimento tradicional</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROBLEMAS / DESAFIOS -->
+        <section id="problemas" class="secao fundo-claro">
+            <div class="container">
+                <h2>⚠️ Desafios da agricultura familiar</h2>
+                <p>Mesmo sendo tão importante, a agricultura familiar enfrenta dificuldades como:</p>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Falta de assistência técnica</h4>
+                        <p>Muitas famílias não têm acesso a orientação sobre práticas sustentáveis.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Dificuldade de acesso ao crédito</h4>
+                        <p>Sem financiamento, fica caro investir em tecnologias verdes.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Desperdício de alimentos</h4>
+                        <p>Falta de estrutura para armazenamento e comercialização direta.</p>
+                    </div>
+                </div>
+                <p><strong>Nosso site ajuda a superar um desses desafios:</strong> levar conhecimento sobre práticas sustentáveis para todos!</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO GERADOR DE DICAS SUSTENTÁVEIS (FUNCIONALIDADE JS) -->
+        <section id="dicas" class="secao">
+            <div class="container">
+                <h2>💡 Gerador de Dicas Sustentáveis</h2>
+                <p>Clique no botão abaixo e receba uma dica para tornar a produção rural mais sustentável.</p>
+                
+                <!-- Área do gerador interativo -->
+                <div class="gerador-dicas">
+                    <button id="btnGerarDica" class="btn-dica">🌿 Gerar dica sustentável</button>
+                    <div id="exibirDica" class="caixa-dica">
+                        Clique no botão para receber sua primeira dica!
+                    </div>
+                </div>
+
+                <p class="info-dica">Dicas para agricultores, estudantes e toda a comunidade.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO / RODAPÉ ANTECIPADO -->
+        <section id="contato" class="secao fundo-claro">
+            <div class="container">
+                <h2>📢 Participe</h2>
+                <p>Você também pode contribuir com a agricultura sustentável: compre de feiras locais, valorize o pequeno produtor e compartilhe conhecimento.</p>
+                <p><em>Juntos construímos um futuro com agro forte e meio ambiente equilibrado!</em></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+            <p>🌍 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+            <p>&copy; 2026 - Campo Sustentável</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO DE ACESSIBILIDADE FIXO -->
+    <div id="botaoAcessibilidade" class="acessibilidade-btn">
+        <button id="btnAcessibilidade" aria-label="Abrir menu de acessibilidade">♿ Acessibilidade</button>
+    </div>
+    
+    <!-- MENU DE ACESSIBILIDADE (inicialmente escondido) -->
+    <div id="menuAcessibilidade" class="menu-acessibilidade">
+        <button id="aumentarFonte">A+ Aumentar fonte</button>
+        <button id="diminuirFonte">A- Diminuir fonte</button>
+        <button id="altoContraste">🌓 Alto contraste</button>
+    </div>
+
+    <!-- JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
