@@ -1,1 +1,270 @@
+/* ===== RESET BÁSICO E CONFIGURAÇÕES GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f7f0;
+    color: #1a3b2f;
+    /* tamanho base da fonte */
+    font-size: 100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/* ===== CABEÇALHO E MENU ===== */
+header {
+    background: linear-gradient(135deg, #0b5e2e, #0277bd);
+    color: white;
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: #064e22;
+    padding: 0.5rem 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #0288d1;
+    border-radius: 5px;
+}
+
+/* ===== SEÇÕES GERAIS ===== */
+.secao {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #c8e6d9;
+}
+
+.fundo-claro {
+    background-color: #e8f5e9;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #0b5e2e;
+    border-left: 5px solid #0277bd;
+    padding-left: 1rem;
+}
+
+h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: #0b5e2e;
+}
+
+.imagem-destaque {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* CARDS (para desafios) */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.2rem;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid #0277bd;
+}
+
+.card h4 {
+    color: #0b5e2e;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== GERADOR DE DICAS (FUNCIONALIDADE JS) ===== */
+.gerador-dicas {
+    background-color: #ffffffdd;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-dica {
+    background-color: #0b5e2e;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    font-weight: bold;
+}
+
+.btn-dica:hover {
+    background-color: #0277bd;
+    transform: scale(1.02);
+}
+
+.caixa-dica {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background-color: #e0f2f1;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    color: #004d40;
+    font-weight: 500;
+    border: 1px solid #b2dfdb;
+    min-height: 100px;
+}
+
+.info-dica {
+    font-style: italic;
+    color: #2e7d32;
+    margin-top: 0.5rem;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #064e22;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* ===== ACESSIBILIDADE (BOTÃO E MENU) ===== */
+.acessibilidade-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#btnAcessibilidade {
+    background-color: #0b5e2e;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #1e3a2f;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: none; /* escondido inicialmente */
+}
+
+.menu-acessibilidade button {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu-acessibilidade button:hover {
+    background-color: #c8e6d9;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-dica {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    
+    .caixa-dica {
+        font-size: 1rem;
+    }
+}
+
+/* ===== ALTO CONTRASTE (CLASE ATIVADA PELO JS) ===== */
+.alto-contraste {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+.alto-contraste header,
+.alto-contraste nav,
+.alto-contraste footer {
+    background-color: #222 !important;
+}
+
+.alto-contraste a,
+.alto-contraste button {
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.alto-contraste .card,
+.alto-contraste .caixa-dica {
+    background-color: #111 !important;
+    color: #ff0 !important;
+}
